@@ -25,6 +25,11 @@ Para la interfaz de usuario, utilice:
 + Tailwind
 + Shadcn
 
+## Deploy
+al proceder a hacer el Deploy, no olvides cambiar la ```URL HOMEPAGE``` de Github Apps.
+Prisma: Necesitas agregar el script ```"postinstall": "prisma generate"``` en el package.json
+No olvides de proporcionar las variables de entorno, y especificamente en NextAuth.js deberas agregar una configuracion adicional sobre esto, puedo leerlo en este enlace de la [Documentacion Oficial, Deploy con NextAuth.js](https://next-auth.js.org/deployment)
+
 ## Conclusión
 Este proyecto contiene una estructura de autenticacion que se puede replicar en cualquier sistema donde se utilice como Framework base (NEXT JS).
 Ya que los Providers, Adapters y Schemas son compatibles solo con NextJS, este repositorio es de codigo abierto y libre de uso, podes clonarlo para revisarlo con fines educativos e implementar la estrucutra, gracias por leer.
